@@ -19,6 +19,12 @@
 http://localhost:9000/talus/metrics/prometheus
 ```
 
+### 构建
+
+```shell script
+mvn clean package -Dmaven.test.skip=true
+docker build -t harbor.xxx.com/talus/talus:release-1.1.1 .
+```
 
 ### 例子
 
